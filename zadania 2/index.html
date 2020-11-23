@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Найденное время</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="connect-type" content="text/html;charset=UTF-8"/>
+    <script type="text/javascript">
+    function startTime() {
+        var date = new Date();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+        if (hours < 10) hours = "0" + hours;
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+        document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
+        setTimeout(startTime, 1000);
+    }
+    setTimeout(func, 5000);
+    function func() {
+        alert("«Цифровой дизайн похож на живопись, только краски никогда не сохнут». (с) Невилл Броуди");
+    }
+    </script>
+</head>
+<body onLoad = 'startTime()'>
+    <div class="box">
+        <div>
+            <p class="first">Ура! Мы нашли время! </p>
+        </div>
+        <div>
+            <p class="second"><i>Время на сайте:</i></p><b><span class="fourth" id="time"></span></b>
+        </div>
+        <div>
+            <p class="third">Тут есть еще таймер!</p>
+        </div>
+    </div>
+     
+    
+</body>

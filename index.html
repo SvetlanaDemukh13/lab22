@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+    <title>Настюшка-хрюшка</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="connect-type" content="text/html;charset=UTF-8"/>
+    <script type="text/javascript">
+        var a;
+
+            if (navigator.userAgent.search(/Safari/) > 0) {a = 'Вы пользуетесь Safari'};
+
+            if (navigator.userAgent.search(/Firefox/) > 0) {a = 'Вы пользуетесь MozillaFirefox'};
+
+            if (navigator.userAgent.search(/MSIE/) > 0 || navigator.userAgent.search(/NET CLR /) > 0) {a = 'Вы пользуетесь Internet Explorer'};
+
+            if (navigator.userAgent.search(/Chrome/) > 0) {a = 'Вы пользуетесь Google Chrome'};
+
+            if (navigator.userAgent.search(/YaBrowser/) > 0) {a = 'Вы пользуетесь Яндекс браузер'};
+
+            if (navigator.userAgent.search(/OPR/) > 0) {a = 'Вы пользуетесь Opera'};
+
+            if (navigator.userAgent.search(/Konqueror/) > 0) {a = 'Вы пользуетесь Konqueror'};
+
+            if (navigator.userAgent.search(/Iceweasel/) > 0) {a = 'Вы пользуетесь Debian Iceweasel'};
+
+            if (navigator.userAgent.search(/SeaMonkey/) > 0) {a = 'Вы пользуетесь SeaMonkey'};
+
+            if (navigator.userAgent.search(/Edge/) > 0) {a = 'Вы пользуетесь Microsoft Edge'};
+
+            alert(a);
+        function hello() {
+            var years = prompt('Ваше любимое число?');
+            alert('Настя любит 13. А Ваше любимое число ' + years)
+        }
+        function math() {
+            var x = 5, y = 15;
+
+                document.write(x);
+
+                document.write("<br>");
+
+                document.write(y);
+
+                var z = Math.min(x, y);
+
+                alert('Минимальное значение - ' + z);
+        }
+        function poweful(){
+            function pow(x, n) {
+
+            if (n == 1) {
+
+            return x;
+
+            } else {
+
+            return x * pow(x, n - 1);
+
+            }
+
+            }
+
+            alert( 'Результат возведения 5 в 3 степень - ' + pow(5, 3) );
+        }
+    </script>    
+</head>
+<body>
+    <div class="box">
+        <div class="onebox">
+            <img src="1.jpg">
+        </div>
+        <div class="twobox">
+            <div>
+                <h1><i>Настюшка-хрюшка</i></h1>
+                <h2>Кто это?</h2>
+                <p>Какосовый маньяк, Мисс "леопардовые штанишки" и победитель премии «заснуть на тусе через 10 минут». Часто теряет свои тапки.<br>
+                    Номинация "лучшее лечо на районе" и шеф-повар по макарошкам аль-денте.<br>
+                    Заплатит за презу, только чтобы не делать её самой.<br>
+                    Хобби - смотреть истории на всю громкость, за что её все конечно же любят.<br>
+                    Любимая фраза "дай куснуть, дай пивнуть".<br>
+                    Умная, красивая.<br>
+                    Говорят, хороший музыкальный вкус.<br>
+                    Обычная крыса со 2 уира (Sike! Теперь она уир-1).<br>
+                    До сих пор играет в ёлочку, найс кортошкевич.<br>
+                    Мисс «интересный макияж перед сном» и «овсяночка со всем только что можно». Постоянно кто-то избивает, не говорит кто.</p>
+                    <form name="2">
+                        <input type="button" onclick="hello();" value="Социальный опрос"/>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="twobox">
+            <div class="second">
+                <h2>Настя отдыхает. Почему?</h2>
+            <p>Как вы можете увидеть, Настя беззаботно пьет кофе и кушает печенье, не думая о времени.<br>
+                А впереди столько много дел: лабораторная работа по веб-дизайну, лабораторная работа по алгоритмизации и программированию,
+                сдача курсовой по экономике огранизации, сдача лабораторной по теории систем и системному анализу, решение задач по дискретной математике.<br>
+                Покажите Насте время!<br>
+                <a href="zadania 2/index.html">Показать время</a>
+            </p>
+            </div>
+        </div>
+        <div class="onebox">
+            <img src="2.jpg">
+        </div>
+    </div>
+    <div class="job">
+        <h1>Кем Настя может быть? (Наведите на картинку)</h1>
+        <div class="box_1">
+            <div>
+                <img src="9.jpg">
+                <div class="text">
+                    <h2>Настя может поработать штангой на ваших тренировкаx. Ваши ноги и руки точно будут в форме!!</h2>
+                </div>
+            </div>
+            <div>
+                <img src="4.jpg">
+                <div class="text">
+                    <h2>Настя обладает навыками парикмахера и визажиста, поэтому она с легкостью соберет вас на свидание или на другое важное событие!</h2>
+                </div>
+            </div>
+            <div>
+                <img src="5.jpg">
+                <div class="text">
+                    <h2>Настя подрабатывает смотрителем шашлыка на тусовках. Теперь ваша еда никогда не подгорит!</h2>
+                </div>
+            </div>
+            <div>
+                <img src="6.jpg">
+                <div class="text">
+                    <h2>Настя отлично чувствует себя в роли охранника. Правда, иногда может пропустить пару ударов. Здесь вы можете наблюдать последствия...</h2>
+                </div>
+            </div>
+            <div>
+                <img src="7.jpg">
+                <div class="text">
+                    <h2>Настя может работать личным такси. Скорость данного автомобиля - 5 км/ч.</h2>
+                </div>
+            </div>
+            <div>
+                <img src="8.jpg">
+                <div class="text">
+                    <h2>Настя подрабатывает поваром и готовит вкусные булочки. Теперь у вас всегда на столе будет свежий хлеб!</h2>
+                </div>
+            </div>
+            <div>
+                <img src="10.jpg">
+                <div class="text">
+                    <h2>Настя обладает навыками игры на гитаре и иногда работает бардом.</h2>
+                </div>
+            </div>
+            <div>
+                <img src="11.jpg">
+                <div class="text text_2">
+                    <h2>Настя подрабатывает ревизорро. Увидит пыль даже там, где ее нет.</h2>
+                </div>
+            </div>
+            <div>
+                <img src="3.jpg">
+                <div class="text text_3">
+                    <h2>Настя может побыть вашей девушкой на светском мероприятии.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form name="2">
+        <input type="button" onclick="math();" value="функция math.min"/>
+    </form>
+    <form name="2">
+        <input type="button" onclick="poweful();" value="функция pow"/>
+    </form>
+</body>
+</html>
